@@ -1,0 +1,47 @@
+@media (max-width: 666px) {
+    .button {
+        margin: 15px;
+        padding: 35px;
+    }
+    #rock {
+        border: 15px solid transparent;
+    }
+    
+    #paper {
+        border: 15px solid transparent;
+    }
+    
+    #scissors {
+        border: 15px solid transparent;
+    }
+    #display {
+        position: absolute;
+        bottom: 25%;
+    }
+}
+
+@media (max-width: 400px) {
+    .button {
+        padding: 25px;
+    }
+    #display {
+        bottom: 30%;
+    }
+}
+
+@media (max-width: 340px) {
+    .button {
+        padding: 25px;
+    }
+    #rock {
+        border: 10px solid transparent;
+    }
+    
+    #paper {
+        border: 10px solid transparent;
+    }
+    
+    #scissors {
+        border: 10px solid transparent;
+    }
+}

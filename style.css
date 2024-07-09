@@ -1,0 +1,370 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+    color: white;
+    text-transform: uppercase;
+    background-image: radial-gradient(hsl(214, 47%, 23%) , hsl(237, 49%, 15%));
+}
+
+.container {
+  padding: 1rem;
+  max-width: 50%;
+  margin: auto;
+}
+
+header {
+  background-color: #f0f0f0;
+  padding: 20px;
+  text-align: center;
+}
+
+.header {
+  padding: 1rem;
+  border: 2px solid gray;
+  border-radius: 10px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.names {
+  text-align: left;
+}
+
+.score {
+  border: 1px solid white;
+  padding: 0.5rem 1.5rem;
+  background-color: white;
+  border-radius: 10px;
+  color: black;
+  font-weight: bold;
+}
+
+h1 {
+  margin: 0;
+}
+
+#rules-btn {
+  background-color: inherit;
+  padding: 5px 15px;
+  border: 2px solid gray;
+  border-radius: 5px;
+  cursor: pointer;
+  color: white;
+  font-weight: bold;
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px;
+  max-width: 75%;
+  margin: auto;
+}
+
+.popup {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: #fff;
+  padding: 20px;
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  display: none;
+  background-image: url('images/popup-image.jpg');
+  background-size: contain;
+  background-position: center;
+}
+
+.popup img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+
+.button-container {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 20px;
+}
+
+.button {
+  padding: 35px 40px;
+  border: 12px solid;
+  border-radius: 5rem;
+  cursor: pointer;
+  flex: 1;
+  margin: 15px 20px;
+}
+
+#rock {
+  background: linear-gradient(white, white) padding-box, radial-gradient(hsl(349, 71%, 52%), hsl(349, 70%, 56%)) border-box;
+  box-shadow: inset 0 0 10px rgba(0, 0, 0, 0.5);
+  border-radius: 10rem;
+  border: 15px solid transparent;
+}
+
+#paper {
+  background: linear-gradient(white, white) padding-box, radial-gradient(hsl(230, 89%, 62%) , hsl(230, 89%, 65%)) border-box;
+  box-shadow: inset 0 0 10px rgba(0, 0, 0, 0.5);
+  border-radius: 10rem;
+  border: 15px solid transparent;
+}
+
+#scissors {
+  background: linear-gradient(white, white) padding-box, radial-gradient(hsl(39, 89%, 49%) , hsl(40, 84%, 53%)) border-box;
+  box-shadow: inset 0 0 10px rgba(0, 0, 0, 0.5);
+  border-radius: 10rem;
+  border: 15px solid transparent;
+}
+
+.d-flex {
+  display: flex;
+}
+
+.justify-end {
+  justify-content: flex-end;
+}
+
+#result {
+  font-size: 24px;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+
+.bg-triangle {
+  position: absolute;
+  z-index: -1;
+  margin-left: 6rem;
+  margin-top: 6rem;
+}
+
+#play-again {
+  padding: 0.5rem 1.5rem;
+  border: 0;
+  border-radius: 10px;
+  cursor: pointer;
+  color: darkgray;
+}
+
+#play-again:hover {
+  transform: scale(1.1);
+  transition: ease-in-out 0.5s;
+}
+
+.result-area {
+  display:flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 0;
+}
+
+.justify-space-around {
+  justify-content: space-around;
+}
+
+#mb-3rem {
+  margin-bottom: 3rem;
+}
+
+.max-w-75 {
+  max-width: 75%;
+  margin: auto;
+}
+
+@media (min-width: 1790px) {
+  .bg-triangle {
+    display: none;
+  }
+  .bg-triangle {
+    margin-left: 0;
+    left: 42.5%;
+  }
+}
+
+@media (max-width: 1790px) {
+  .bg-triangle {
+    margin-left: 0;
+    left: 42.5%;
+  }
+}
+
+@media (max-width: 1600px) {
+  .bg-triangle {
+    left: 41.5%;
+  }
+}
+
+@media (max-width: 1400px) {
+  .bg-triangle {
+    left: 40.5%;
+  }
+  .container {
+    max-width: 60%;
+}
+}
+
+@media (max-width: 1250px) {
+  .bg-triangle {
+    left: 39.5%;
+  }
+}
+
+@media (max-width: 1100px) {
+  .bg-triangle {
+    left: 38.5%;
+  }
+  .container {
+    max-width: 70%;
+}
+}
+
+@media (max-width: 965px) {
+  .bg-triangle {
+    left: 36.5%;
+  }
+  .container {
+    max-width: 80%;
+}
+}
+
+@media (max-width: 865px) {
+  .bg-triangle {
+    left: 34.5%;
+  }
+}
+
+@media (max-width: 800px) {
+  .bg-triangle {
+    left: 32.5%;
+  }
+  .container {
+    max-width: 100%;
+}
+  .header {
+    max-width:80%;
+    margin:auto;
+  }
+  #rules-btn {
+    padding: 10px 25px;
+    border-radius: 10px;
+    font-size: 20px;
+    font-weight: bolder;
+}
+.justify-end {
+  justify-content: center;
+}
+}
+
+@media (max-width: 665px) {
+  .bg-triangle {
+    left: 30.5%;
+    margin-top:4.5rem;
+  }
+  .close-btn{
+    color:darkgray;
+  }
+  .button {
+    margin:10px 15px;
+    padding:25px;
+  }
+  #rock {
+    border: 10px solid transparent;
+  }
+  
+  #paper {
+    border: 10px solid transparent;
+  }
+  
+  #scissors {
+    border: 10px solid transparent;
+  }
+  img{
+    max-width:80%;
+  }
+  .popup {
+    width: 100%;
+    height: 100vh;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 0;
+  }
+  .close-btn {
+    position: absolute;
+    bottom: 6rem;
+    font-size: 75px;
+    cursor: pointer;
+  }
+}
+
+@media (max-width: 600px) {
+  .bg-triangle {
+    left: 26.5%;
+  }
+}
+
+@media (max-width: 520px) {
+  .bg-triangle {
+    left: 25.5%;
+  }
+  main {
+    max-width:100%;
+  }
+}
+
+@media (max-width: 446px) {
+  .bg-triangle {
+    left: 20.5%;
+  }
+}
+
+@media (max-width: 400px) {
+  .bg-triangle {
+    left: 15.5%;
+  }
+  body {
+    font-size:12px;
+  }
+}
+
+@media (max-width: 380px) {
+  .bg-triangle {
+    left: 15.5%;
+    margin-top:3.5rem;
+  }
+  .bg-triangle img{
+    max-width:60%;
+  }
+  .button {
+    margin: 5px 10px;
+    padding: 15px;
+  }
+}
+
+@media (max-width: 340px) {
+  .bg-triangle {
+    left: 12.5%;
+  }
+  body{
+    font-size:10px;
+  }
+}
+
+@media (max-width: 314px) {
+  .bg-triangle {
+    display:none;
+  }
+}

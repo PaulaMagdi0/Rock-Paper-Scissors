@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+    <title>Rock Paper Scissors</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="container">
+    <div class="header">
+      <div class="names">    
+        <h2>Rock</h2>
+        <h2>Paper</h2>
+        <h2>Scissors</h2>
+      </div>
+      <div class="score">
+        <p>Score</p>
+        <h1 id="score">0</h1>
+      </div>
+    </div>
+
+    <div class="popup" id="rules-popup">
+      <img src="./images/image-rules.svg" alt="Rules Image">
+      <span class="close-btn">&times;</span>
+    </div>
+
+    <main>
+      <section class="game-area">
+        <div class="bg-triangle">
+          <img src="./images/bg-triangle.svg" alt="triangle" width="250px">
+        </div>
+        <button class="choice button" id="paper"><img src="./images/icon-paper.svg" alt="Paper"></button>
+        <button class="choice button" id="scissors"><img src="./images/icon-scissors.svg" alt="Scissors"></button>
+        <button class="choice button" id="rock"><img src="./images/icon-rock.svg" alt="Rock"></button>
+      </section>
+    </main>
+    <div class="d-flex justify-end">
+      <button id="rules-btn">Rules</button>
+    </div>
+  </div>
+  <script src="script.js"></script>
+  <script src="resultScript.js"></script>
+</body>
+</html>

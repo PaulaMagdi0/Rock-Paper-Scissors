@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+    <title>Rock Paper Scissors</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="cssResultAddition.css">
+</head>
+<body>
+    <div class="container max-w-75">
+        <div class="header max-w-75" id="mb-3rem">
+            <div class="names">    
+                <h2>Rock</h2>
+                <h2>Paper</h2>
+                <h2>Scissors</h2>
+            </div>
+            <div class="score">
+                <p>Score</p>
+                <h1 id="score">0</h1>
+            </div>
+        </div>
+        <section class="result-area justify-space-around">
+            <div>
+                <h3 id="player-choice">YOU PICKED</h3>
+                <div id="player-choice-icon"></div>
+            </div>
+            <div id="display">
+                <h2 id="result"></h2>
+                <button id="play-again">PLAY AGAIN</button>
+            </div>
+            <div>
+                <h3 id="computer-choice">THE HOUSE PICKED</h3>
+                <div id="computer-choice-icon"></div>
+            </div>
+        </section>
+    </div>
+    <script src="resultScript.js"></script>
+</body>
+</html> 
